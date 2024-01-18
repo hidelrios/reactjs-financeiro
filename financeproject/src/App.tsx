@@ -2,13 +2,18 @@ import { ThemeProvider } from "styled-components"
 import { defaultTheme } from "./styles/themes/default";
 import { GlobalStyle } from "./styles/global";
 import { Home } from "./pages/home";
+import { StocksProvider } from "./contexts/StocksContext";
+
 
 export function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-         <Home/>
+
+         <StocksProvider>
+            <Home/>
+         </StocksProvider>
     </ThemeProvider>
 
   )

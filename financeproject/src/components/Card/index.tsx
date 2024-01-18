@@ -5,20 +5,28 @@ import {
   CardPrice,
   CardTitle,
 } from "./styles";
-import logoImg from "../../assets/logoeletro.png";
 import { ArrowUp } from "@phosphor-icons/react";
-export function Card() {
+
+type StockProps = {
+  stock: string;
+  name : string;
+  close: number;
+  logo : string
+}
+
+export function Card({stock, name, close,logo}:StockProps ) {
   return (
     <CardContainer>
-      <img src={logoImg} alt="" />
+        <img src={logo} alt="" style={{ width: '20%' }} />
+
       <CardContent>
         <CardHeader>
-            <CardTitle>AES Eletropaulo</CardTitle>
-            <CardTitle>ELPL4</CardTitle>
+            <CardTitle>{name}</CardTitle>
+            <CardTitle>{stock}</CardTitle>
         </CardHeader>
         <span>PREÇO DO ATIVO</span>
-        <CardPrice>R$ 36,32 <ArrowUp size={25} /></CardPrice>
-        
+        <CardPrice>{close}<ArrowUp size={25} /></CardPrice>
+    
       </CardContent>
     </CardContainer>
   );

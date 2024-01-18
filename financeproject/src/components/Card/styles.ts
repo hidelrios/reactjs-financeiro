@@ -18,7 +18,6 @@ export const CardTitle = styled.span`
   font-size: 0.9rem;
   color: ${(props) => props.theme["gray-200"]};
 `;
-
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -28,3 +27,8 @@ export const CardPrice = styled.span`
   font-size: 32px;
   color: ${(props) => props.theme["green-100"]};
 `;
+
+export const CardLogo = styled.img`
+  width: 20px;
+  height: 20px;
+`
