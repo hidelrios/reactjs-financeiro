@@ -17,6 +17,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Typescript
 - Node.js
 - ReactJs
+- Styled Components
+- Phosphor Icons
 - Git e Github
 
 ## 💻 Projeto

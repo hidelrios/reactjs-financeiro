@@ -30,7 +30,7 @@ export function StocksProvider({ children }: StocksProviderProps) {
     async function fetchStocks() {
       const response = await api.get(apiUrl)
       
-      //console.log(response.data.stocks)
+      console.log(response.data.stocks)
       setStocks(response.data.stocks)
     }
     useEffect(() => {
