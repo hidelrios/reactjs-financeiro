@@ -4,6 +4,7 @@ import {
   CardHeader,
   CardPrice,
   CardTitle,
+  TitleSpan,
 } from "./styles";
 import { ArrowUp } from "@phosphor-icons/react";
 
@@ -24,8 +25,8 @@ export function Card({stock, name, close,logo}:StockProps ) {
             <CardTitle>{name}</CardTitle>
             <CardTitle>{stock}</CardTitle>
         </CardHeader>
-        <span>PREÇO DO ATIVO</span>
-        <CardPrice>{close}<ArrowUp size={25} /></CardPrice>
+        <TitleSpan>PREÇO DO ATIVO</TitleSpan>
+        <CardPrice> R$ {close}<ArrowUp size={18} /></CardPrice>
     
       </CardContent>
     </CardContainer>
