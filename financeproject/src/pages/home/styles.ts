@@ -16,6 +16,9 @@ export const HomeTitle = styled.h1`
   @media (max-width: 390px) {
     font-size: 32px;
   }
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 `;
 
 export const TagSpan = styled.span`

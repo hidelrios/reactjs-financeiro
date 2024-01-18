@@ -13,6 +13,12 @@ export const CardContainer = styled.div`
     height: 300px;
     padding: 5rem;
   }
+
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 300px;
+    padding: 5rem;
+  }
 `;
 
 export const CardHeader = styled.div`
@@ -28,12 +34,19 @@ export const CardTitle = styled.span`
   @media (max-width: 390px) {
     font-size: 14px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 export const TitleSpan = styled.span`
-
   font-size: 0.9rem;
   
   @media (max-width: 390px) {
+      font-size: 14px;
+    }
+  
+  @media (max-width: 768px) {
       font-size: 14px;
     }
 `

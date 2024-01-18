@@ -23,6 +23,11 @@ export const TagContainer = styled.button<TagProps>`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 768px) {
+    width: 100px;
+    padding: 6px;
+  }
 `;
 
 export const TagContent = styled.span<TagProps>`
@@ -31,6 +36,9 @@ export const TagContent = styled.span<TagProps>`
 
   @media (max-width: 390px) {
     font-size: 18px;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 
 `;
